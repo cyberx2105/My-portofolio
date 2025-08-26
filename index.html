@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio - Nur Hidayat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="container">
+      <div class="nav-header">
+        <a href="index.html" class="logo">CyberX2105</a>
+        <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+      </div>
+      <ul class="nav-links">
+        <li><a href="about.html" class="selected">Tentang</a></li>
+        <li><a href="skills.html">Keahlian</a></li>
+        <li><a href="projects.html">Proyek</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero container">
+    <div class="hero-text">
+      <img src="avatar.jpg" alt="Foto Nur Hidayat" class="avatar">
+      <h1>Halo, saya <span>Nur Hidayat</span></h1>
+      <p>Menghubungkan dunia hukum & keamanan siber</p>
+      <a href="contact.html" class="btn">Hubungi Saya</a>
+      <a href="projects.html" class="btn btn-secondary">Lihat Portofolio</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Nur Hidayat | Menghubungkan Hukum & Keamanan Siber</p>
+  </footer>
+
+  <script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+  </script>
+</body>
+</html>

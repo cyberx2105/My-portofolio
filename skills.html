@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Keahlian - Nur Hidayat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="nav-header">
+        <a href="index.html" class="logo">CyberX2105</a>
+        <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+      </div>
+      <ul class="nav-links">
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="skills.html" class="selected">Keahlian</a></li>
+        <li><a href="projects.html">Proyek</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="section bg-light">
+    <div class="container">
+      <h2>🛠️ Keahlian</h2>
+      <div class="skills-grid">
+        <div class="skill-card">Hukum Pidana & Perdata</div>
+        <div class="skill-card">Cyber Law & Forensik Digital</div>
+        <div class="skill-card">Networking & Cybersecurity</div>
+        <div class="skill-card">Ethical Hacking</div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© 2025 Nur Hidayat | Menghubungkan Hukum & Keamanan Siber</p>
+  </footer>
+  <script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+  </script>
+</body>
+</html>
